@@ -28,7 +28,7 @@
     }).addTo(map);
 
 
-    $.getJSON("https://joodehBakri.github.io/Libraries.json", function(data) {
+    $.getJSON("https://joodehbakri.github.io/Libraries.json", function(data) {
       L.geoJson(data, {
         pointToLayer: function(feature, latlng) {
           return L.circleMarker(latlng, {
@@ -54,7 +54,7 @@
         style: function(feature) {
           return {
             color: "purple", // Deep sky blue 
-            weight: 2,0
+            weight: 0,5
             opacity: 1,0
             fillOpacity: 0 // Transparent zones
           };
